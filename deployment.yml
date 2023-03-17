@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: file-share-app-deploy
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: file-share
+  template:
+    metadata:
+      labels:
+        app: file-share
+    spec:
+      containers:
+        - name: app
+          image: davidjay2111/real-time-file-sharing
+          ports:
+            - containerPort: 3000
