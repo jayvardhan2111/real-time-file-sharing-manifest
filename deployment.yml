@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: app
-          image: davidjay2111/real-time-file-sharing:build-13
+          image: davidjay2111/real-time-file-sharing:build-14
           ports:
             - containerPort: 3000
